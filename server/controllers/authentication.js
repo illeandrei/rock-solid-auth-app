@@ -43,3 +43,10 @@ exports.signup = function(req, res, next) {
     });
   });
 };
+
+exports.signin = function(req, res, next) {
+  //user has already been auth'd
+  //we just need to give them a token
+  //user model is assign by passport to req.user
+  res.json({ token: tokenForUser(req.user) });
+};
