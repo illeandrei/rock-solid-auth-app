@@ -3,9 +3,8 @@
  ```
     cd server
     npm install
-    echo "exports.secret = '<someRandomString>';" >> config.js
+    node create-config-file.js    
  ```
- - remove "" from config.js`s generated line and replace someRandomString with gibberish 😁
  - install MongoDB [guide](https://treehouse.github.io/installation-guides/windows/mongo-windows.html)
 
 # Start project:
