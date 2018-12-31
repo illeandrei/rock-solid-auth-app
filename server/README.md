@@ -1,4 +1,4 @@
-#Setup:
+# Setup:
  - run the following commands:
  ```
     npm install
@@ -6,7 +6,7 @@
  ```
  - install MongoDB [guide](https://treehouse.github.io/installation-guides/windows/mongo-windows.html)
 
-#Start project:
+# Start project:
 - open cmd and start mongo deamon: 
 ```
 "c:\Program Files\MongoDB\Server\4.0\bin\mongod.exe"
