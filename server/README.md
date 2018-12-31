@@ -1,6 +1,7 @@
 # Setup:
  - run the following commands:
  ```
+    cd server
     npm install
     echo "exports.secret = '<someRandomString>';" >> server/config.js
  ```
@@ -10,15 +11,16 @@
 # Start project:
 - open cmd and start mongo deamon: 
 ```
-"c:\Program Files\MongoDB\Server\4.0\bin\mongod.exe"
+    "c:\Program Files\MongoDB\Server\4.0\bin\mongod.exe"
 ```
 
 - open new/another cmd and start mongo: 
 ```
-"c:\Program Files\MongoDB\Server\4.0\bin\mongo.exe"
+    "c:\Program Files\MongoDB\Server\4.0\bin\mongo.exe"
 ```
 
 - start server:
 ```
-npm run dev
+    cd server
+    npm run dev
 ```
