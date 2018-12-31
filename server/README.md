@@ -3,7 +3,7 @@
  ```
     cd server
     npm install
-    echo "exports.secret = '<someRandomString>';" >> server/config.js
+    echo "exports.secret = '<someRandomString>';" >> config.js
  ```
  - remove "" from config.js`s generated line and replace someRandomString with gibberish 😁
  - install MongoDB [guide](https://treehouse.github.io/installation-guides/windows/mongo-windows.html)
