@@ -8,10 +8,16 @@
 
 #Start project:
 - open cmd and start mongo deamon: 
+```
 "c:\Program Files\MongoDB\Server\4.0\bin\mongod.exe"
+```
 
 - open new/another cmd and start mongo: 
+```
 "c:\Program Files\MongoDB\Server\4.0\bin\mongo.exe"
+```
 
 - start server:
+```
 npm run dev
+```
