@@ -1,13 +1,17 @@
-MongoDB - https://treehouse.github.io/installation-guides/windows/mongo-windows.html
+#Setup:
+ - run the following commands:
+ ```
+    npm install
+    echo "exports.secret = '<someRandomString>';" >> server/config.js
+ ```
+ - install MongoDB [guide](https://treehouse.github.io/installation-guides/windows/mongo-windows.html)
 
-- data directory path (custom): 
-c:\Play\mongoDb\data
-
-- configure path of data dir: 
-"c:\Program Files\MongoDB\Server\4.0\bin\mongod.exe" --dbpath c:\Play\mongoDb\data
-
-- start mongo deamon: 
+#Start project:
+- open cmd and start mongo deamon: 
 "c:\Program Files\MongoDB\Server\4.0\bin\mongod.exe"
 
-- start mongo: 
+- open new/another cmd and start mongo: 
 "c:\Program Files\MongoDB\Server\4.0\bin\mongo.exe"
+
+- start server:
+npm run dev
