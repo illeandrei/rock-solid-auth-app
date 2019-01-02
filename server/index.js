@@ -6,6 +6,7 @@ const morgan = require("morgan");
 const app = express();
 const router = require("./router");
 const mongoose = require("mongoose");
+const cors = require("cors");
 
 //DB setup
 mongoose.connect(
@@ -13,8 +14,14 @@ mongoose.connect(
   { useNewUrlParser: true }
 );
 
+const corsOptions = {
+  origin: "http://localhost:3000",
+  optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+};
+
 //App setup
 app.use(morgan("combined"));
+app.use(cors(corsOptions));
 app.use(bodyParser.json({ type: "*/*" }));
 router(app);
 
